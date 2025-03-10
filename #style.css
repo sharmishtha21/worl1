@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.todo-app {
+  background: rgb(230, 55, 180);
+  max-width: 540px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+}
+
+.todo-app h2 {
+  color: darkslateblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+h2 img {
+  width: 40px;
+  height: 40px;  /* Fixed size */
+  margin-left: 10px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  outline: none;
+  padding: 10px;
+  border: 2px solid #4e085f;
+  background: white;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background: hsl(282, 100%, 50%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  outline: none;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px;
+  background: white;
+  margin: 8px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+ul li.checked::before {
+  background-image: url(checked.png);
+  text-decoration: line-through;
+  color: grey;
+}
+
+ul li .delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
